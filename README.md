@@ -45,19 +45,4 @@ http://127.0.0.1:5000
 2. Отсканируй его через Google Authenticator
 3. При входе система запросит код подтверждения
 
-Структура проекта:
-
-flask_auth_lab/
-├── app/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── routes.py
-│   ├── forms.py
-│   └── templates/
-│       └── шаблончики
-├── run.py
-├── config.py
-├── requirements.txt
-└── README.md
-
 Сделано в учебных целях
