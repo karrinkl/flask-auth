@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Новый пароль{% endblock %}
+{% block content %}
+<h2 class="mb-4 text-center">Установка нового пароля</h2>
+<p class="text-muted text-center mb-4">Введите новый надёжный пароль для входа в аккаунт.</p>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+        {{ form.password.label(class="form-label") }}
+        {{ form.password(class="form-control") }}
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-success">{{ form.submit.label.text }}</button>
+    </div>
+</form>
+{% endblock %}

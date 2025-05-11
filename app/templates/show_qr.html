@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Настройка 2FA{% endblock %}
+{% block content %}
+<h2 class="mb-4 text-center">Сканируйте QR-код</h2>
+<p class="text-center text-muted">Пользователь: <strong>{{ username }}</strong></p>
+<div class="d-flex justify-content-center mb-3">
+    <img src="data:image/png;base64,{{ img_data }}" alt="QR-код для 2FA" class="img-fluid border p-2 rounded">
+</div>
+<p class="text-center">После сканирования вы можете <a href="{{ url_for('main.login') }}">войти</a>.</p>
+<p class="text-center fw-semibold text-secondary mb-4">Запомните код для входа через приложение</p>
+{% endblock %}
