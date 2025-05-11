@@ -20,8 +20,7 @@ cd flask-auth-lab
 
 2. Создай и активируй виртуальное окружение
 python -m venv venv
-venv\Scripts\activate  # Windows
-# или source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate  # Windows (или source venv/bin/activate  # для macOS/Linux)
 
 3. Установи зависимости
 pip install -r requirements.txt
